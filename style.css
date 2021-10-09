@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: grid;
+    place-items: center;
+    box-shadow: 0rem 1.2re 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.main-container .heading{
+    font-size: 2rem;
+    box-shadow: 0rem 1.2re 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #111;
+    text-transform: uppercase;
+
+}
+
+.music-container .title{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    box-shadow: 0rem 1.2re 3rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+.music-container .artist{
+    font-weight: 0.2rem;
+    text-transform: capitalize;
+}
+
+
+.main-container .music-container{
+    height: 50rem;
+    width: 35rem;
+    background-color: #ffff;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.img-container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+img{
+    padding: 0.2rem;
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.music-controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.music-controls .fas{
+    margin-top: 5rem;
+    color: #111;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2));
+}
+
+.music-controls .main-btn{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #111;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-controls .fas:hover{
+    color: gray;
+    background-color: #f6f6f6;
+}
+
+.music-container .main-btn{
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.music-container .main-btn:hover{
+    color: black;
+    background-color: #f6f6f6;
+}
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
